@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="form-container"> 
+        <div class="form-col">
+            <div class="btn-box">
+              <p class="btn-1">Creation de compte </p>
+            </div>
+            <!--login form container-->
+            <section class="form-box login-form">
+                <div class="form-inputs">
+                    <form action="../fichier.cgi/sign_up.cgi" method="get">
+                        <div class="input-box">
+                            <input type="text" name="username" class="inputs input-field" placeholder="Nom d'utilisateur" required>
+                            <ion-icon name="person-outline" class="icon"></ion-icon>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" name="pwd" class="inputs input-field" placeholder="mot de passe" required>
+                            <ion-icon name="lock-closed-outline" class="icon"></ion-icon>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" class="inputs btn" value="Creer">
+                        </div>
+                    </form>    
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--web icons import-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

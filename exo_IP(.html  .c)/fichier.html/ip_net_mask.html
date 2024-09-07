@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse d'IP</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="form-container"> 
+        <div class="form-col">
+            <div class="btn-box">
+                <p class="btn-1">Analyse d'Adresse IP</p>
+            </div>
+            <!-- Formulaire d'analyse d'IP -->
+            <section class="form-box login-form">
+                <div class="form-inputs">
+                    <form action="gestion.cgi" method="get">
+                        <div class="input-box">
+                            <input type="text" id="IP" name="IP" class="inputs input-field" placeholder="Adresse IP (Ex : 192.168.1.1)" required>
+                            <ion-icon name="globe-outline" class="icon"></ion-icon>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" id="masque" name="masque" class="inputs input-field" placeholder="Masque de sous-réseau (Ex : 255.255.255.0)" required>
+                            <ion-icon name="options-outline" class="icon"></ion-icon>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" class="inputs btn" value="Valider">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Web icons import -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
